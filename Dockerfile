@@ -5,6 +5,9 @@ RUN sed -i "s@repo.openeuler.org@repo.huaweicloud.com/openeuler@g" /etc/yum.repo
 COPY scripts/setup-basic.sh /tmp/
 RUN /tmp/setup-basic.sh
 
+COPY scripts/setup-bioc-copr.sh /tmp/
+RUN /tmp/setup-bioc-copr.sh
+
 COPY scripts/setup-xvfb.sh /tmp/
 RUN /tmp/setup-xvfb.sh
 
@@ -22,18 +25,12 @@ RUN /tmp/setup-pdf-viewer.sh
 COPY scripts/setup-pandoc.sh /tmp/
 RUN /tmp/setup-pandoc.sh
 
-COPY scripts/setup-gsl.sh /tmp/
-RUN /tmp/setup-gsl.sh
-
 COPY ./JAGS-4.3.2.tar.gz /tmp/
 COPY scripts/setup-jags.sh /tmp/
 RUN /tmp/setup-jags.sh
 
 COPY scripts/setup-gdal.sh /tmp/
 RUN /tmp/setup-gdal.sh
-
-COPY scripts/setup-udunits2.sh /tmp/
-RUN /tmp/setup-udunits2.sh
 
 COPY scripts/setup-dotnet.sh /tmp/
 RUN /tmp/setup-dotnet.sh
