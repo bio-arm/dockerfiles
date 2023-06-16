@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 sudo mkdir -p /etc/profile.d/
-sudo cat <<EOT >> /etc/profile.d/bioc.sh
+cat <<EOT | sudo tee /etc/profile.d/bioc.sh
 export RETICULATE_PYTHON="/usr/bin/python3"
 export LIBSBML_CFLAGS=$(pkg-config --cflags /home/biocbuild/libsbml/lib/pkgconfig/libsbml.pc)
 export LIBSBML_LIBS=$(pkg-config --libs /home/biocbuild/libsbml/lib/pkgconfig/libsbml.pc)
