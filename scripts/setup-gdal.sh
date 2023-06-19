@@ -8,5 +8,5 @@ tar zxvf gdal-${GDAL_VERSION}.tar.gz
 cd gdal-${GDAL_VERSION}
 mkdir build && cd build
 cmake ..
-make -j2
+make -j1
 make install

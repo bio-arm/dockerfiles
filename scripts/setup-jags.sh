@@ -7,5 +7,5 @@ cp /tmp/JAGS-${JAGS_VERSION}.tar.gz .
 tar zxvf JAGS-${JAGS_VERSION}.tar.gz
 cd  JAGS-${JAGS_VERSION}
 ./configure
-make -j
+make -j1
 sudo make install

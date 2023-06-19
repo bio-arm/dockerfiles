@@ -9,5 +9,5 @@ tar jxvf openbabel-${OPEN_BABEL_VERSION}-source.tar.bz2
 cd openbabel-${OPEN_BABEL_VERSION}
 mkdir build && cd build
 cmake ..
-make -j
+make -j1
 cmake --install . --prefix ${HOME}/openbabel-${OPEN_BABEL_VERSION}

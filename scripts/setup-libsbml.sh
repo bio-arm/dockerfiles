@@ -9,5 +9,5 @@ cd libsbml
 #tar zxvf v${LIBSBML_VERSION}.tar.gz
 #cd libsbml-${LIBSBML_VERSION}
 ./configure --prefix=$HOME/libsbml
-make -j
+make -j1
 make install
