@@ -17,9 +17,6 @@ COPY ./JAGS-4.3.2.tar.gz /tmp/
 COPY scripts/setup-jags.sh /tmp/
 RUN /tmp/setup-jags.sh
 
-COPY scripts/setup-gdal.sh /tmp/
-RUN /tmp/setup-gdal.sh
-
 COPY scripts/setup-biocbuild-user.sh /tmp/
 RUN /tmp/setup-biocbuild-user.sh
 
@@ -36,9 +33,6 @@ RUN /tmp/setup-pandoc.sh
 
 COPY scripts/setup-dotnet.sh /tmp/
 RUN /tmp/setup-dotnet.sh
-
-COPY scripts/setup-openbabel.sh /tmp/
-RUN /tmp/setup-openbabel.sh
 
 COPY scripts/setup-libsbml.sh /tmp/
 RUN /tmp/setup-libsbml.sh
