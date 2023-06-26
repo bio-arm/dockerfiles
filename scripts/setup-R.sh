@@ -3,7 +3,7 @@
 
 # install R
 mkdir ${HOME}/R && cd ${HOME}/R
-export R_VERSION=4.3.0
+export R_VERSION=4.3.1
 wget https://cran.r-project.org/src/base/R-4/R-${R_VERSION}.tar.gz
 tar zxvf R-${R_VERSION}.tar.gz
 cd R-${R_VERSION}
