@@ -1,4 +1,4 @@
-FROM docker.io/openeuler/openeuler:22.03-lts-sp1
+FROM docker.io/openeuler/openeuler:22.03-lts-sp2
 
 RUN sed -i "s@repo.openeuler.org@repo.huaweicloud.com/openeuler@g" /etc/yum.repos.d/openEuler.repo
 
