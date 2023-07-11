@@ -18,6 +18,6 @@ ${HOME}/BBS/utils/R-fix-flags.sh
 cat <<EOT > $HOME/bin/R
 #!/usr/bin/env bash
 
-R_ENVIRON_USER=${HOME}/BBS/3.18/Renviron.bioc $HOME/R/R-4.3.0/bin/R $@
+R_ENVIRON_USER=${HOME}/BBS/3.18/Renviron.bioc ${HOME}/R/R-${R_VERSION}/bin/R \$@
 EOT
 chmod +x $HOME/bin/R
